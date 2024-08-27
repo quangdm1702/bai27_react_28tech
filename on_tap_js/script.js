@@ -37,3 +37,17 @@ const updateUser = {
 
 console.log({ ...user, ...updateUser });
 //End Spread synctax
+
+// Rest parameters
+
+const sum = (...numbers) => {
+    let sum = 0;
+    sum = numbers.reduce((total, item) => {
+        return total + item;
+    }, 0);
+    return sum;
+}
+
+console.log(sum(10, 20, 30, 40, 50, 60));
+
+// Rest parameters
