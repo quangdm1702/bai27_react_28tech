@@ -51,3 +51,14 @@ const sum = (...numbers) => {
 console.log(sum(10, 20, 30, 40, 50, 60));
 
 // Rest parameters
+
+// Destructuring
+const users = {
+    name: 'Quang',
+    age: 21,
+    colorEyes: 'brown'
+};
+const { name, age } = users;
+console.log(name);
+console.log(age);
+// Destructuring
